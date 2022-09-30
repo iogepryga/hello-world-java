@@ -1,6 +1,6 @@
 node {
   stage('Clone') {
-    git 'https://github.com/iogepryga/hello-world-java.git'
+    git branch: 'main', url: 'https://github.com/iogepryga/hello-world-java.git'
   }
   stage('Build') {
     sh label: '', script: 'javac Main.java'
